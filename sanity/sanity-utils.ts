@@ -39,7 +39,7 @@ export async function getPages(): Promise<Page[]> {
             title,
             "slug": slug.current
         }`
-    );
+    )
 }
 
 export async function getPage(slug: string): Promise<Page> {
