@@ -31,7 +31,16 @@ export default async function Home() {
             </Link>
           ))}
     </div>
-        
+    
+    {/* Skills Section */}
+    <section className="h-96 bg-slate-100 mt-8">
+      <h2 className="font-bold text-3xl">Skills</h2>
+      <div className="h-72 flex flex-col-reverse gap-8 m-5">
+        <article className="w-full h-1/3 bg-green-400">Beginner</article>
+        <article className="w-full h-1/3 bg-blue-200">Average</article>
+        <article className="w-full h-1/3 bg-purple-400">Proficient</article>
+      </div>
+    </section>
     </div>
   );
 }
