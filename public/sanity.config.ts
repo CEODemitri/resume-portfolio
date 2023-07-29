@@ -5,7 +5,7 @@ const config = defineConfig({
 	projectId: "uhl041t7",
 	dataset: "production",
 	title: "My Personal Website",
-	apiVersion: "2023-06-30",
+	apiVersion: "2023-07-29",
 	basePath: "/admin",
 	plugins: [deskTool()],
 });
