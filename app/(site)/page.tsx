@@ -44,7 +44,7 @@ export default async function Home() {
      </section>
    
   {/* Game */}
-    <div className="container max-w:1/3 h-72 m-auto flex flex-col">
+    <div className="container max-w:1/3 h-72 m-auto place-content-center flex flex-col">
       <section className="w-1/2 h-1/2 bg-purple-400">Banana</section>
       <section className="w-1/2 h-1/2 bg-blue-200">Orange</section>
       <section className="w-1/2 h-1/2 bg-green-400">Green</section>
