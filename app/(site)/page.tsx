@@ -13,7 +13,7 @@ export default async function Home() {
       
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">Mein Projects</h2>
 
-    <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project) => (
             <Link href={`/projects/${project.slug}`} key={project._id} className="border border-sky-400 rounded-lg p-1 hover:scale-105 border:border-purple-600 transition">
               {project.image && (
@@ -30,8 +30,9 @@ export default async function Home() {
               </div>
             </Link>
           ))}
-    </div>
+       </div>
     
+<<<<<<< HEAD
     {/* Skills Section */}
     <section className="h-96 bg-slate-100 mt-8">
       <h2 className="font-bold text-3xl">Skills</h2>
@@ -42,5 +43,25 @@ export default async function Home() {
       </div>
     </section>
     </div>
+=======
+  {/* Skills Section */}
+      <section className="h-96 bg-slate-100 mt-8">
+        <h2 className="font-bold text-3xl">Skills</h2>
+        <div className="h-72 flex flex-col-reverse gap-8 m-5">
+          <article className="w-full h-1/3 bg-green-400">Beginner</article>
+          <article className="w-full h-1/3 bg-blue-200">Average</article>
+          <article className="w-full h-1/3 bg-purple-400">Proficient</article>
+        </div>
+        <a className="h-24 w-36 text-white bg-slate-800">Resume</a>
+     </section>
+   
+  {/* Game */}
+    <div className="container max-w:1/3 h-48 m-auto flex flex-col">
+      <section className="w-1/2 h-1/2 bg-purple-400"></section>
+      <section className="w-1/2 h-1/2 bg-blue-200"></section>
+      <section className="w-1/2 h-1/2 bg-green-400"></section>
+    </div>
+  </div>
+>>>>>>> b1dbae93b8193746718341fb8f996470c8dc28c9
   );
 }
