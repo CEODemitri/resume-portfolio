@@ -48,6 +48,7 @@ export default async function Home() {
       <section className="w-1/2 h-1/2 bg-purple-400">Banana</section>
       <section className="w-1/2 h-1/2 bg-blue-200">Orange</section>
       <section className="w-1/2 h-1/2 bg-green-400">Green</section>
+      <section className="w-1/2 h-1/2"></section>
     </div>
   </div>
   );
