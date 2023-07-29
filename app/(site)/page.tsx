@@ -40,11 +40,11 @@ export default async function Home() {
           <article className="w-full h-1/3 bg-blue-200">Average</article>
           <article className="w-full h-1/3 bg-purple-400">Proficient</article>
         </div>
-        <a className="h-24 w-36 text-white bg-slate-800">Resume</a>
+        <a className="h-24 w-36 text-white bg-slate-800 m-auto">Resume</a>
      </section>
    
   {/* Game */}
-    <div className="container max-w:1/3 h-48 m-auto flex flex-col">
+    <div className="container max-w:1/3 h-72 m-auto flex flex-col">
       <section className="w-1/2 h-1/2 bg-purple-400"></section>
       <section className="w-1/2 h-1/2 bg-blue-200"></section>
       <section className="w-1/2 h-1/2 bg-green-400"></section>
