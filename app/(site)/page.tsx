@@ -1,6 +1,8 @@
 import { getProjects } from "@/sanity/sanity-utils"
 import Image from 'next/image';
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 export default async function Home() {
 
@@ -37,6 +39,7 @@ export default async function Home() {
         <h2 className="font-bold text-3xl">Skills</h2>
         <div className="h-72 flex flex-col-reverse gap-8 m-5">
           <article className="w-full h-1/3 bg-green-400">Beginner</article>
+          <FontAwesomeIcon icon="fa-brands fa-html5" flip />
           <article className="w-full h-1/3 bg-blue-200">Average</article>
           <article className="w-full h-1/3 bg-purple-400">Proficient</article>
         </div>
