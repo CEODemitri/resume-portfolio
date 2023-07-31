@@ -33,7 +33,7 @@ export default async function Home() {
        </div>
     
   {/* Skills Section */}
-      <section className="h-96 bg-slate-100 mt-8">
+      <section className="h-96 mt-8">
         <h2 className="font-bold text-3xl">Skills</h2>
         <div className="h-72 flex flex-col-reverse gap-8 m-5">
           <article className="w-full h-1/3 bg-green-400">Beginner</article>
@@ -42,14 +42,7 @@ export default async function Home() {
         </div>
         <a className="h-10 w-36 text-white text-xl font-semibold px-6 py-1 justify-center bg-gradient-to-l from-slate-800 to-slate-300 hover:from-purple-500 hover:to-blue-400 flex m-auto mt-14 rounded-md hover:animate-bounce">Resume</a>
      </section>
-   
-  {/* Game */}
-    <div className="container max-w:1/3 h-72 mt-16 place-content-center grid grid-cols-2">
-      <section className="w-1/2 h-1/2 bg-purple-400">Banana</section>
-      <section className="w-1/2 h-1/2 bg-blue-200">Orange</section>
-      <section className="w-1/2 h-1/2 bg-green-400">Green</section>
-      <section className="w-1/2 h-1/2"></section>
-    </div>
+
   </div>
   );
 }
