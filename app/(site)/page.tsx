@@ -17,7 +17,7 @@ export default async function Home() {
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project) => (
-            <Link href={`/projects/${project.slug}`} key={project._id} className="border border-sky-400 rounded-lg p-1 hover:scale-105 border:border-purple-600 transition">
+            <Link href={`/projects/${project.slug}`} key={project._id} className="border border-sky-400 rounded-lg p-1 hover:scale-105 border:border-purple-600 transition mb-24">
               {project.image && (
                 <Image 
                 src={project.image}
@@ -38,10 +38,28 @@ export default async function Home() {
       <section className="h-96 mt-8">
         <h2 className="font-bold text-3xl">Skills</h2>
         <div className="h-72 flex flex-col-reverse gap-8 m-5">
-          <article className="w-full h-1/3 bg-green-400">Beginner</article>
-          <FontAwesomeIcon icon="fa-brands fa-html5" flip />
-          <article className="w-full h-1/3 bg-blue-200">Average</article>
-          <article className="w-full h-1/3 bg-purple-400">Proficient</article>
+          <section className="w-full h-1/3 bg-green-400">
+              <h3>Beginner</h3>
+              <article>
+                <p>API</p>
+                <p>Ruby</p>
+              </article>
+          </section>
+          <section className="w-full h-1/3 bg-blue-200">
+              <h3>Average</h3>
+              <article>
+                <p>Javascript</p>
+                <p>Web FrameWorks</p>
+                <p>BackEnd Development</p>
+              </article>
+          </section>
+          <article className="w-full h-1/3 bg-purple-400">
+            <h3>Proficient</h3>
+            <article>
+              <p>HTML/CSS</p>
+              <p>Team Development</p>
+            </article>
+          </article>
         </div>
         <a className="h-10 w-36 text-white text-xl font-semibold px-6 py-1 justify-center bg-gradient-to-l from-slate-800 to-slate-300 hover:from-purple-500 hover:to-blue-400 flex m-auto mt-14 rounded-md hover:animate-bounce">Resume</a>
      </section>

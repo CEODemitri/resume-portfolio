@@ -13,7 +13,7 @@ export default async function Project({ params }: Props) {
   return (
     <div>
         <header className="flex justify-between">
-            <h1 className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold">{project.name}</h1>
+            <h1 className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent text-3xl sm:text-3xl md:text-5xl drop-shadow font-extrabold">{project.name}</h1>
             <a 
                 href={project.url} 
                 title="View Project"
@@ -26,7 +26,7 @@ export default async function Project({ params }: Props) {
             </a>
         </header>
 
-        <div className="text-lg text-blue-500 mt-5">
+        <div className="text-lg text-blue-500 mt-5 leading-8">
             <PortableText value={project.content} />
         </div>
 
