@@ -3,6 +3,7 @@ export type Contact = {
   _createdAt: Date;
   title: string;
   slug: string;
+  name: string;
   image: string;
   url: string;
 };
