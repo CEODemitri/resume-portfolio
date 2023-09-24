@@ -2,7 +2,7 @@ import "../globals.css"
 
 export const metadata = {
   title: 'My Portfolio App',
-  description: 'CRA & Sanity; following a Tutorial, using my own ideas',
+  description: 'CRA & Sanity; followed a Tutorial; Currently Upgrading, using my own ideas',
 };
 
 export default function RootLayout({
