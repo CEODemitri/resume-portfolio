@@ -78,7 +78,7 @@ export default async function Home() {
       <section className="">
         <h2 className="font-bold text-3xl text-gray-700 pb-5">Skills</h2>
           <div className="grid grid-rows-3">
-            <section className="w-full h-1/3 rounded-md m-5 gap-7">
+            <section className="w-full h-1/3 rounded-md flex flex-row m-5 gap-7">
               {skills.map((skill) => (
                 <>
                   <div className="border inline-block">
@@ -94,17 +94,23 @@ export default async function Home() {
                     <div className="mt-2 font-extrabold bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent text-xl">
                       {skill.name}
                     </div>
-                    <div className="mt-2 font-extrabold text-green-700">
-                      {skill.rating}
+
+                    {/* Creating A Dropdown button to Add info of Rating */}
+                    <div>
+                      <button className="mt-2 font-extrabold text-green-700">
+                        {skill.rating}
+                      </button>
+                      <p className="">Replace with a slug, to have variants for each slide</p>
                     </div>
+
                   </div>
                 </>
               ))}
             </section>
           </div>
 
-          {/* Resue  Section */}
-        <a className="h-10 w-36 text-white text-xl font-semibold px-6 py-1 justify-center bg-gradient-to-l from-purple-800 to-slate-300 hover:from-purple-500 hover:to-blue-400 flex m-auto mt-14 rounded-md hover:animate-bounce drop-shadow-md">
+          {/* Resume  Section */}
+        <a className="h-10 w-36 text-white text-xl font-semibold px-6 py-1 justify-center bg-gradient-to-l from-purple-800 to-slate-300 hover:from-purple-500 hover:to-blue-400 flex m-auto mt-1 rounded-md hover:animate-bounce drop-shadow-md">
           Resume
         </a>
       </section>
