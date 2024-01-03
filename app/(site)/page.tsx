@@ -22,7 +22,6 @@ export default async function Home() {
         <span className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
           Demitri
         </span>
-        !
       </h1>
       <p className="mt-3 text-xl text-sky-600">
         A Skillfull <span className="text-red-300 underline">Full Stack</span>{" "}
