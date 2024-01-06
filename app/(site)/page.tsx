@@ -5,16 +5,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
+import { CardDefault, CodingCard, GraphicsCard } from "../(site)/components/MaterialTailwindComponents";
+import { DefaultSpeedDial } from "./components/MaterialTailwindComponents";
 
 export default async function Home() {
   const projects = await getProjects();
   const contacts = await getContacts();
-  const skills = await getSkills();
 
   return (
     <div>
 
-
+      <DefaultSpeedDial/> 
       {/* hero section */}
       <div className="h-[340px]">
         {/* <Image src="/me.jpg" alt="hard work" width={500} height={450}/> */}
@@ -25,7 +26,7 @@ export default async function Home() {
           Demitri!
         </span>
       </h1>
-      <p className="mt-3 text-xl text-sky-600">
+      <p className="mt-3 text-xl text-blue-600">
         A Skillfull <span className="text-red-300 underline">Full Stack</span>{" "}
         <span className="italic">Developer</span>
       </p>
@@ -75,7 +76,24 @@ export default async function Home() {
           </Link>
         ))}
       </div>
+      <div>
 
+      </div>
+      <h2 className="mt-12 font-bold text-gray-700 text-3xl">All Works</h2>
+        <section className="project-categories flex flex-col flex-wrap md:flex-row lg:flex-nowrap justify-around gap-4">
+          <Link href={'https://google.com'}>
+            <CardDefault />
+          </Link>
+
+          <Link href={'https://google.com'}>
+            <CodingCard/>
+          </Link>
+        
+          <Link href={'https://google.com'}>
+            <GraphicsCard />
+          </Link>
+        
+        </section>
 
     </div>
   );
