@@ -17,7 +17,8 @@ export default async function Home() {
 
       <DefaultSpeedDial/> 
       {/* hero section */}
-      <div className="h-72">
+      <div className="h-[340px]">
+        {/* <Image src="/me.jpg" alt="hard work" width={500} height={450}/> */}
       </div>
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
@@ -50,7 +51,7 @@ export default async function Home() {
         ))}
       </div>
 
-      <h2 className="mt-12 font-bold text-gray-700 text-3xl">Mein Projects</h2>
+      <h2 className="mt-12 font-bold text-gray-700 text-3xl bg-black/70 px-5 py-2 rounded-xl">Mein Projects</h2>
       <p className="text-black text-lg">These are two of my favorite projects I feel display my current skills.</p>
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
