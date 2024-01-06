@@ -1,7 +1,7 @@
 import { Project } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
-import { Page } from "@/types/page";
+import { Page } from "@/types/Page";
 import { Contact } from "@/types/Contact";
 import { Skill } from "@/types/Skill";
 
