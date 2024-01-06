@@ -17,8 +17,7 @@ export default async function Home() {
 
       <DefaultSpeedDial/> 
       {/* hero section */}
-      <div className="h-[340px]">
-        {/* <Image src="/me.jpg" alt="hard work" width={500} height={450}/> */}
+      <div className="h-72">
       </div>
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
