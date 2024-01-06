@@ -21,7 +21,7 @@ import {
   CogIcon,
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
-import Image from 'next/image';
+import {Image} from 'next/image';
 
 export function DefaultSpeedDial() {
   return (
