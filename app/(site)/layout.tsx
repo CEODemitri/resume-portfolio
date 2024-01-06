@@ -20,7 +20,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-10">
+      <body className="max-w-3xl mx-auto py-10 bg-[url('/me.jpg')] bg-no-repeat bg-contain lg:bg-cover text-white overflow-x-hidden">
         <header className="flex items-center justify-between">
           <Link
             href="/"

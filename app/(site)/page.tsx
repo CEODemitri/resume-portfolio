@@ -16,11 +16,13 @@ export default async function Home() {
 
 
       {/* hero section */}
-      <div className="h-48"></div>
+      <div className="h-[340px]">
+        {/* <Image src="/me.jpg" alt="hard work" width={500} height={450}/> */}
+      </div>
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
         <span className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
-          Demitri
+          Demitri!
         </span>
       </h1>
       <p className="mt-3 text-xl text-sky-600">
@@ -28,7 +30,7 @@ export default async function Home() {
         <span className="italic">Developer</span>
       </p>
 
-      <div className="flex mt-6 space-x-7">
+      <div className="flex mt-6 justify-around">
         {contacts.map((contact) => (
           <Link
             href={`${contact.url}`}
@@ -49,6 +51,7 @@ export default async function Home() {
       </div>
 
       <h2 className="mt-12 font-bold text-gray-700 text-3xl">Mein Projects</h2>
+      <p className="text-black text-lg">These are two of my favorite projects I feel display my current skills.</p>
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
@@ -66,53 +69,12 @@ export default async function Home() {
                 className="object-cover rounded-lg border border-gray-500"
               />
             )}
-            <div className="mt-2 font-extrabold bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
+            <div className="mt-2 font-extrabold bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent text-2xl">
               {project.name}
             </div>
           </Link>
         ))}
       </div>
-
-      {/* Skills Section */}
-      <section className="">
-        <h2 className="font-bold text-3xl text-gray-700 pb-5">Skills</h2>
-          <div className="grid grid-rows-3">
-            <section className="w-full h-1/3 rounded-md flex flex-row m-5 gap-7">
-              {skills.map((skill) => (
-                <>
-                  <div className="border inline-block">
-                    {skill.image && (
-                      <Image
-                        src={skill.image}
-                        alt={skill.name}
-                        width={50}
-                        height={50}
-                        className=""
-                      />
-                    )}
-                    <div className="mt-2 font-extrabold bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent text-xl">
-                      {skill.name}
-                    </div>
-
-                    {/* Creating A Dropdown button to Add info of Rating */}
-                    <div>
-                      <button className="mt-2 font-extrabold text-green-700">
-                        {skill.rating}
-                      </button>
-                      <p className="">Replace with a slug, to have variants for each slide</p>
-                    </div>
-
-                  </div>
-                </>
-              ))}
-            </section>
-          </div>
-
-          {/* Resume  Section */}
-        <a className="h-10 w-36 text-white text-xl font-semibold px-6 py-1 justify-center bg-gradient-to-l from-purple-800 to-slate-300 hover:from-purple-500 hover:to-blue-400 flex m-auto mt-1 rounded-md hover:animate-bounce drop-shadow-md">
-          Resume
-        </a>
-      </section>
 
 
     </div>
