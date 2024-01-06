@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
-import { CardDefault, CodingCard, GraphicsCard } from "../(site)/components/MaterialTailwindComponents";
+import { CardDefault, CodingCard, GraphicsCard } from "./components/MaterialTailwindComponents";
 import { DefaultSpeedDial } from "./components/MaterialTailwindComponents";
 
 export default async function Home() {
