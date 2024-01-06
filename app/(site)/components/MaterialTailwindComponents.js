@@ -55,7 +55,7 @@ export function CardDefault() {
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
         <Image
-          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+          src="../me.png"
           width={125}
           height={60}
           alt="card-image"
@@ -83,7 +83,7 @@ export function CodingCard() {
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
         <Image
-          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+          src="../me.png"
           width={125}
           height={60}
           alt="card-image"
@@ -111,7 +111,7 @@ export function GraphicsCard() {
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
         <Image
-          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+          src="../me.png"
           width={125}
           height={60}
           alt="card-image"
