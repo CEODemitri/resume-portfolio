@@ -2,7 +2,6 @@ import { getPages } from "@/sanity/sanity-utils";
 import Link from "next/link";
 import "../globals.css";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,6 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <ThemeProvider>
       <html lang="en">
         <body className="max-w-3xl mx-auto py-10 bg-[url('/me.jpg')] lg:bg-center bg-no-repeat bg-contain lg:bg-cover text-white overflow-x-hidden">
           <header className="flex items-center justify-between border bg-black/70 px-5 py-2 rounded-xl">
@@ -45,6 +43,5 @@ export default async function RootLayout({
           <main className="py-20">{children}</main>
         </body>
       </html>
-    </ThemeProvider>
   );
 }
