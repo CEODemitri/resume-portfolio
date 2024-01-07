@@ -2,11 +2,11 @@ import { getProjects } from "@/sanity/sanity-utils";
 import { getContacts } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-// import {
-//   CardDefault,
-//   CodingCard,
-//   GraphicsCard, DefaultSpeedDial
-// } from "./components/MaterialTailwindComponents";
+import {
+  CardDefault,
+  CodingCard,
+  GraphicsCard, DefaultSpeedDial
+} from "./components/MaterialTailwindComponents";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <div>
-      {/* <DefaultSpeedDial /> */}
+      <DefaultSpeedDial />
       {/* hero section */}
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
@@ -88,7 +88,7 @@ export default async function Home() {
         </p>
       </div>
       
-      {/* <section className="project-categories mt-5 flex flex-col flex-wrap items-center md:flex-row lg:flex-nowrap justify-around gap-4">
+      <section className="project-categories mt-5 flex flex-col flex-wrap items-center md:flex-row lg:flex-nowrap justify-around gap-4">
         <Link href={"https://google.com"}>
           <CardDefault />
         </Link>
@@ -100,7 +100,7 @@ export default async function Home() {
         <Link href={"https://google.com"}>
           <GraphicsCard />
         </Link>
-      </section> */}
+      </section>
     </div>
   );
 }
