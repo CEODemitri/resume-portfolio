@@ -5,7 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
-import { CardDefault, CodingCard, GraphicsCard } from "./components/MaterialTailwindComponents";
+import {
+  CardDefault,
+  CodingCard,
+  GraphicsCard,
+} from "./components/MaterialTailwindComponents";
 import { DefaultSpeedDial } from "./components/MaterialTailwindComponents";
 
 export default async function Home() {
@@ -14,29 +18,25 @@ export default async function Home() {
 
   return (
     <div>
-
-      <DefaultSpeedDial/> 
+      <DefaultSpeedDial />
       {/* hero section */}
-      <div className="h-[340px]">
-        {/* <Image src="/me.jpg" alt="hard work" width={500} height={450}/> */}
-      </div>
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
         <span className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
           Demitri!
         </span>
       </h1>
-      <p className="mt-3 text-xl text-blue-600">
+      <p className="mt-3 text-xl text-blue-600 font-semibold">
         A Skillfull <span className="text-red-300 underline">Full Stack</span>{" "}
         <span className="italic">Developer</span>
       </p>
 
-      <div className="flex mt-6 justify-around">
+      <div className="relative top-10 md:top-5 flex justify-around">
         {contacts.map((contact) => (
           <Link
             href={`${contact.url}`}
             key={contact._id}
-            className="p-1 hover:scale-115 border:border-purple-600 transition mb-24"
+            className="p-1 hover:scale-115 border:border-purple-600 transition mb-44 md:bg-orange-100/40 rounded-2xl shadow-lg shadow-blue-gray-400 md:shadow-blue-gray-700"
           >
             {contact.image && (
               <Image
@@ -51,8 +51,15 @@ export default async function Home() {
         ))}
       </div>
 
-      <h2 className="mt-12 font-bold text-gray-700 text-3xl bg-black/70 px-5 py-2 rounded-xl">Mein Projects</h2>
-      <p className="text-black text-lg">These are two of my favorite projects I feel display my current skills.</p>
+      <div className=" bg-black/70 px-5 py-2 rounded-xl shadow-lg shadow-blue-gray-400">
+        <h2 className="mt-6 font-bold text-white text-3xl">
+          Mein Projects
+        </h2>
+        <p className="text-gray-500 text-lg">
+          These are two of my favorite projects I feel display my current
+          skills. More words will/should fill this space. Geesh.
+        </p>
+      </div>
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
@@ -76,25 +83,28 @@ export default async function Home() {
           </Link>
         ))}
       </div>
-      <div>
 
+      <div className=" bg-black/70 px-5 py-2 rounded-xl">
+        <h2 className="mt-6 font-bold text-white text-3xl">All Works</h2>
+        <p className="text-gray-500 text-lg">
+          These are two of my favorite projects I feel display my current
+          skills.
+        </p>
       </div>
-      <h2 className="mt-12 font-bold text-gray-700 text-3xl">All Works</h2>
-        <section className="project-categories flex flex-col flex-wrap md:flex-row lg:flex-nowrap justify-around gap-4">
-          <Link href={'https://google.com'}>
-            <CardDefault />
-          </Link>
+      
+      <section className="project-categories mt-5 flex flex-col flex-wrap items-center md:flex-row lg:flex-nowrap justify-around gap-4">
+        <Link href={"https://google.com"}>
+          <CardDefault />
+        </Link>
 
-          <Link href={'https://google.com'}>
-            <CodingCard/>
-          </Link>
-        
-          <Link href={'https://google.com'}>
-            <GraphicsCard />
-          </Link>
-        
-        </section>
+        <Link href={"https://google.com"}>
+          <CodingCard />
+        </Link>
 
+        <Link href={"https://google.com"}>
+          <GraphicsCard />
+        </Link>
+      </section>
     </div>
   );
 }

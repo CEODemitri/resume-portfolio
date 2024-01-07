@@ -54,16 +54,11 @@ export function CardDefault() {
   return (
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
-        <Image
-          src="../me.png"
-          width={125}
-          height={60}
-          alt="card-image"
-        />
+        <Image src="/me.jpg" width={125} height={60} alt="card-image" />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          UI/UX Review Check
+          UI/UX Works
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -72,7 +67,7 @@ export function CardDefault() {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button>Read More</Button>
+        <Button>Works</Button>
       </CardFooter>
     </Card>
   );
@@ -82,12 +77,7 @@ export function CodingCard() {
   return (
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
-        <Image
-          src="../me.png"
-          width={125}
-          height={60}
-          alt="card-image"
-        />
+        <Image src="/me.jpg" width={125} height={60} alt="card-image" />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -100,7 +90,7 @@ export function CodingCard() {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button>Read More</Button>
+        <Button>Projects</Button>
       </CardFooter>
     </Card>
   );
@@ -110,16 +100,11 @@ export function GraphicsCard() {
   return (
     <Card className="mt-6 w-72">
       <CardHeader color="blue-gray" className="relative h-48">
-        <Image
-          src="../me.png"
-          width={125}
-          height={60}
-          alt="card-image"
-        />
+        <Image src="/me.jpg" width={125} height={60} alt="card-image" />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Graphic Design Projects
+          Design Catalog
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
@@ -128,7 +113,7 @@ export function GraphicsCard() {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button>Read More</Button>
+        <Button>Catalog</Button>
       </CardFooter>
     </Card>
   );
