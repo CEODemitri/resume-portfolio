@@ -7,6 +7,8 @@ import {
   CardFooter,
   Typography,
   Button,
+} from "@material-tailwind/react";
+import {
   IconButton,
   SpeedDial,
   SpeedDialHandler,
@@ -19,7 +21,7 @@ import {
   CogIcon,
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
-import { Image } from "next/image";
+import Image from "next/image";
 
 export function DefaultSpeedDial() {
   return (
@@ -60,8 +62,7 @@ export function CardDefault() {
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to &quot;Naviglio&quot; where you can enjoy the main
-          night life in Barcelona.
+          walk and near to where you can enjoy the main night life in Barcelona.
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
@@ -83,8 +84,7 @@ export function CodingCard() {
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to &quot;Naviglio&quot; where you can enjoy the main
-          night life in Barcelona.
+          walk and near to where you can enjoy the main night life in Barcelona.
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
@@ -106,8 +106,7 @@ export function GraphicsCard() {
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to &quot;Naviglio&quot; where you can enjoy the main
-          night life in Barcelona.
+          walk and near to where you can enjoy the main night life in Barcelona.
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
