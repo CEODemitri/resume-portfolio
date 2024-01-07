@@ -22,8 +22,8 @@ export default async function Home() {
           Demitri!
         </span>
       </h1>
-      <p className="mt-3 text-xl text-blue-600 font-semibold">
-        A Skillfull <span className="text-red-300 underline">Full Stack</span>{" "}
+      <p className="mt-3 text-xl text-cyan-600 font-semibold">
+        A Skillfull <span className="text-deep-orange-300 underline">Full Stack</span>{" "}
         <span className="italic">Developer</span>
       </p>
 

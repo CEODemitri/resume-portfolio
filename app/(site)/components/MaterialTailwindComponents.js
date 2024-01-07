@@ -26,10 +26,10 @@ import Image from "next/image";
 export function DefaultSpeedDial() {
   return (
     <div className="relative h-80 w-full">
-      <div className="absolute bottom-0 right-0">
+      <div className="absolute md:fixed bottom-5 right-5">
         <SpeedDial placement="bottom">
           <SpeedDialHandler>
-            <IconButton size="lg" className="rounded-full">
+            <IconButton size="lg" className="rounded-full  bg-deep-orange-900">
               <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
             </IconButton>
           </SpeedDialHandler>
