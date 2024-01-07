@@ -1,5 +1,5 @@
 "use client";
-// practice
+
 import {
   Card,
   CardHeader,
