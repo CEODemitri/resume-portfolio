@@ -6,7 +6,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Demitri Echols Portfolio App',
+  title: 'Demitri Echols\' Portfolio App',
   description: 'CRA & Sanity; following a Tutorial, using my own ideas',
 }
 
@@ -28,13 +28,13 @@ export default async function RootLayout({
               Demitri
             </Link>
 
-            <div className="flex gap-5 text-sm text-slate-400">
+            {/* <div className="flex gap-5 text-sm text-slate-400">
               {pages.map((page) => (
                 <Link key={page._id} href={`/${page.slug}`} className="hover:underline">
                   {page.title}
                 </Link>
               ))}
-            </div>
+            </div> */}
 
         </header>
         <main className="py-20">

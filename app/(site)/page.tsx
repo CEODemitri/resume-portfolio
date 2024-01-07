@@ -1,16 +1,12 @@
 import { getProjects } from "@/sanity/sanity-utils";
 import { getContacts } from "@/sanity/sanity-utils";
-import { getSkills } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 import {
   CardDefault,
   CodingCard,
-  GraphicsCard,
+  GraphicsCard, DefaultSpeedDial
 } from "./components/MaterialTailwindComponents";
-import { DefaultSpeedDial } from "./components/MaterialTailwindComponents";
 
 export default async function Home() {
   const projects = await getProjects();
