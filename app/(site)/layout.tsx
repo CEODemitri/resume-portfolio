@@ -28,7 +28,7 @@ export default async function RootLayout({
               Demitri
             </Link>
 
-            <div className="flex items-center gap-5 text-sm text-slate-400">
+            <div className="flex gap-5 text-sm text-slate-400">
               {pages.map((page) => (
                 <Link key={page._id} href={`/${page.slug}`} className="hover:underline">
                   {page.title}
