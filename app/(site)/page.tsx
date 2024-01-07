@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <div>
-      <DefaultSpeedDial />
+      {/* <DefaultSpeedDial /> */}
       {/* hero section */}
       <h1 className="text-7xl font-extrabold">
         Hallo ich bin{" "}
