@@ -35,13 +35,13 @@ export function DefaultSpeedDial() {
           </SpeedDialHandler>
           <SpeedDialContent>
             <SpeedDialAction>
-              <HomeIcon className="h-5 w-5" />
+              <HomeIcon className="h-5 w-5 text-red-700" />
             </SpeedDialAction>
             <SpeedDialAction>
-              <CogIcon className="h-5 w-5" />
+              <CogIcon className="h-5 w-5 text-red-700" />
             </SpeedDialAction>
             <SpeedDialAction>
-              <Square3Stack3DIcon className="h-5 w-5" />
+              <Square3Stack3DIcon className="h-5 w-5 text-red-700" />
             </SpeedDialAction>
           </SpeedDialContent>
         </SpeedDial>
