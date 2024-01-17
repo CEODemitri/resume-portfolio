@@ -34,10 +34,13 @@ export function DefaultSpeedDial() {
             </IconButton>
           </SpeedDialHandler>
           <SpeedDialContent>
-            <SpeedDialAction>
+            <SpeedDialAction
+              toolTipTitle="Link 1"
+              onClick={() => window.open("https://www.google.com/")}
+            >
               <HomeIcon className="h-5 w-5 text-red-700" />
             </SpeedDialAction>
-            <SpeedDialAction>
+            <SpeedDialAction title="Link 2">
               <CogIcon className="h-5 w-5 text-red-700" />
             </SpeedDialAction>
             <SpeedDialAction>
