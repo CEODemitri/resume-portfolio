@@ -27,3 +27,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+body {
+  width: 100svw;
+  height: 100svh;
+  background-image: url(/me.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

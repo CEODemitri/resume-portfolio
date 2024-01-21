@@ -25,8 +25,8 @@ import Image from "next/image";
 
 export function DefaultSpeedDial() {
   return (
-    <div className="relative h-80 w-full">
-      <div className="absolute md:fixed bottom-5 right-5">
+    <div className="relative w-full">
+      <div className="fixed bottom-5 right-3">
         <SpeedDial placement="bottom">
           <SpeedDialHandler>
             <IconButton size="lg" className="rounded-full  bg-deep-orange-900">

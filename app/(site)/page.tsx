@@ -15,11 +15,11 @@ export default async function Home() {
 
   return (
     <div>
-      {/* place this at the bottom of screen */}
-      <DefaultSpeedDial/>
       {/* hero section */}
-      {/* fix the lazy fix of white text */}
-      <h1 className="text-7xl font-extrabold text-black md:text-white md:mt-10">
+      <DefaultSpeedDial></DefaultSpeedDial>
+      {/* spacer */}
+      <section className="h-96"></section>
+      <h1 className="text-7xl font-extrabold text-black mt-24">
         Hallo ich bin{" "}
         <span className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
           Demitri!
@@ -29,9 +29,6 @@ export default async function Home() {
         A Skillfull <span className="text-deep-orange-300 underline">Full Stack</span>{" "}
         <span className="italic">Developer</span>
       </p>
-
-      <Image src={"/me.jpg"} height={300} width={400} alt="lazy fix to get my image to appear on the page" className="md:invisible m-auto" />
-
       <div className="relative top-10 md:top-5 flex justify-around">
         {contacts.map((contact) => (
           <Link
@@ -97,21 +94,21 @@ export default async function Home() {
 
       {/* why hire me? Skills? Tech Stack */}
       <div className="mt-20 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <section className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
+        <section className="bg-amber-100/70 p-6 rounded-lg shadow-md dark:bg-gray-800">
           <div className="flex items-center gap-4">
             <span className="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
               <span className="flex h-full w-full items-center justify-center rounded-full bg-muted">JP</span>
             </span>
             <div>
               <h2 className="text-2xl font-bold">Demitri</h2>
-              <p className="text-gray-500 dark:text-gray-400">Software Developer</p>
+              <p className="text-gray-700 dark:text-gray-400">Software Developer</p>
             </div>
           </div>
-          <p className="mt-4 text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-gray-800 dark:text-gray-400">
             Passionate about coding and always eager to learn new technologies.
           </p>
         </section>
-        <section className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
+        <section className="bg-orange-100/70 p-6 rounded-lg shadow-md dark:bg-gray-800">
           <h3 className="text-xl font-bold mb-2">Hobbies</h3>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-400">
             <li>Reading</li>
@@ -119,7 +116,7 @@ export default async function Home() {
             <li>Painting</li>
           </ul>
         </section>
-        <section className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
+        <section className="bg-amber-100/70 p-6 rounded-lg shadow-md dark:bg-gray-800">
           <h3 className="text-xl font-bold mb-2">Skills</h3>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-400">
             <li>JavaScript</li>
@@ -127,18 +124,27 @@ export default async function Home() {
             <li>Svelte</li>
           </ul>
         </section>
-        <section className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
+        <section className="bg-orange-100/70 p-6 rounded-lg shadow-md dark:bg-gray-800">
           <h3 className="text-xl font-bold mb-2">Contact</h3>
           <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-            <li>Email: johndoe@example.com</li>
+            <li>Email: iprgramidesign@gmail.com</li>
             <li>Phone: +1 234 567 890</li>
             <li>LinkedIn: linkedin.com/in/johndoe</li>
           </ul>
         </section>
       </div>
       
-      {/* i will take this omponet and place it in the speedial....somehow */}
-      <LiveSites/>
+      <div className=" bg-black/70 px-5 py-2 rounded-xl shadow-lg shadow-blue-gray-400 mt-24">
+        <h2 className="mt-6 font-bold text-white text-3xl">
+          Live Sites
+        </h2>
+        <p className="text-gray-500 text-lg">
+          These are two of my favorite projects I feel display my current
+          skills. I have explored many different languages and libraries all to find my own way.
+        </p>
+        <section><LiveSites/></section>
+      </div>
+      
     </div>
   );
 }

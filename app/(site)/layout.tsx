@@ -2,7 +2,6 @@ import { getPages } from "@/sanity/sanity-utils";
 import Link from "next/link";
 import "../globals.css";
 import { Inter } from "next/font/google";
-import { DefaultSpeedDial } from "./components/MaterialTailwindComponents";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +20,7 @@ export default async function RootLayout({
 
   return (
       <html lang="en">
-        <body className="max-w-3xl mx-auto h-screen py-10 md:bg-[url('/me.jpg')] lg:bg-center bg-no-repeat bg-contain lg:bg-cover text-white overflow-x-hidden">
+        <body className="max-w-3xl mx-auto h-screen py-10 text-white overflow-x-hidden ">
           <header className="flex items-center justify-between border bg-transparent px-5 py-2 rounded-xl">
             <Link
               href="/"
@@ -42,7 +41,7 @@ export default async function RootLayout({
               ))}
             </div>
           </header>
-          <main className="py-20">{children}</main>
+          <main>{children}</main>
         </body>
       </html>
   );
