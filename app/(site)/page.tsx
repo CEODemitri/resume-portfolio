@@ -8,13 +8,14 @@ import {
   GraphicsCard, DefaultSpeedDial
 } from "./components/MaterialTailwindComponents";
 import { LiveSites } from "@/components/live-sites";
+import { url } from "inspector";
 
 export default async function Home() {
   const projects = await getProjects();
   const contacts = await getContacts();
 
   return (
-    <div>
+    <div className="body">
       {/* hero section */}
       <DefaultSpeedDial></DefaultSpeedDial>
       {/* spacer */}

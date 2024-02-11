@@ -29,10 +29,10 @@ body {
 } */
 
 body {
-  width: 100svw;
-  height: 100svh;
+  width: 100vw;
+  height: 100vh;
   background-image: url(/me.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
