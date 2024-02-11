@@ -20,7 +20,7 @@ export default async function Home() {
       <DefaultSpeedDial></DefaultSpeedDial>
       {/* spacer */}
       <section className="h-96"></section>
-      <h1 className="text-7xl font-extrabold text-black mt-24">
+      <h1 className="text-7xl font-extrabold text-white mt-24">
         Hallo ich bin{" "}
         <span className="bg-gradient-to-r from-green-500 via-blue-300 to-purple-500 bg-clip-text text-transparent">
           Demitri!
@@ -35,7 +35,7 @@ export default async function Home() {
           <Link
             href={`${contact.url}`}
             key={contact._id}
-            className="p-1 hover:scale-115 border:border-purple-600 transition mb-44 md:bg-orange-100/40 rounded-2xl shadow-lg shadow-blue-gray-400 md:shadow-blue-gray-700"
+            className="p-1 hover:scale-115 border:border-purple-600 transition mb-44 bg-orange-100/40 rounded-2xl shadow-lg shadow-blue-gray-400 md:shadow-blue-gray-700"
           >
             {contact.image && (
               <Image
@@ -82,7 +82,7 @@ export default async function Home() {
               </div>
             </Link>
             {/* add description from cms */}
-            <p className="text-black p-2">Eligendi beatae ea repudiandae! Deleniti aliquam provident quia! Quis libero consequuntur iure cumque perspiciatis illo debitis, esse similique, ut facilis sed ducimus!</p>
+            <p className="text-white p-2">Eligendi beatae ea repudiandae! Deleniti aliquam provident quia! Quis libero consequuntur iure cumque perspiciatis illo debitis, esse similique, ut facilis sed ducimus!</p>
             <div className="flex gap-5 pl-5">
               <button className="bg-indigo-800/80 px-5 py-1 rounded-md"> View Code</button>
               <button className="bg-deep-orange-600 px-5 py-1 rounded-md"> View Code</button>
@@ -95,17 +95,17 @@ export default async function Home() {
 
       {/* why hire me? Skills? Tech Stack */}
       <div className="mt-20 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <section className="bg-amber-100/70 p-6 rounded-lg shadow-md dark:bg-gray-800">
+        <section className="bg-amber-900/30 p-6 rounded-lg shadow-md dark:bg-gray-800">
           <div className="flex items-center gap-4">
             <span className="relative flex shrink-0 overflow-hidden rounded-full h-16 w-16">
               <span className="flex h-full w-full items-center justify-center rounded-full bg-muted">JP</span>
             </span>
             <div>
               <h2 className="text-2xl font-bold">Demitri</h2>
-              <p className="text-gray-700 dark:text-gray-400">Software Developer</p>
+              <p className="text-gray-200 dark:text-gray-400">Software Developer</p>
             </div>
           </div>
-          <p className="mt-4 text-gray-800 dark:text-gray-400">
+          <p className="mt-4 text-gray-300 dark:text-gray-400">
             Passionate about coding and always eager to learn new technologies.
           </p>
         </section>

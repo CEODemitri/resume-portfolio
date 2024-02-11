@@ -31,8 +31,20 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(/me.jpg);
+  background-image: url(../public/bg/Sm.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media (min-width: 716px) {
+  body {
+    background-image: url(../public/bg/md.jpg);
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    background-image: url(../public/bg/lg.jpeg);
+  }
 }
